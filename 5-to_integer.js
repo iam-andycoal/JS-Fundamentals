@@ -1,11 +1,11 @@
-const {argv} = require('node:process');
+const x = Number(process.argv[2]);
 
-const args = process.argv
-
-//no arguments = no arguments
-//no length, myVar
-
-if (args[2] === undefined) {
-	console.log("No argument")
-} else 
-	console.log(process.argv[2])
+if (isNaN(x)) {
+  console.log('Missing number of occurrences');
+} else {
+  let i = 0;
+  while (i < x) {
+    console.log('C is fun');
+    i++;
+  }
+}
